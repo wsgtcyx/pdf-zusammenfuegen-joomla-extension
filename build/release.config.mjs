@@ -8,7 +8,7 @@ export const releaseConfig = {
   authorEmail: "support2@pdfzus.de",
   authorUrl: "https://pdfzus.de/",
   homepage: "https://pdfzus.de/",
-  githubRepository: "wsgtcyx/joomla-extension-pdf-zusammenfuegen",
+  githubRepository: "wsgtcyx/pdf-zusammenfuegen-joomla-extension",
   targetPlatformVersion: "5\\.[0-9]+|6\\.[0-9]+",
   releaseTag: "v0.1.0"
 };

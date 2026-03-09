@@ -15,6 +15,6 @@
     <file type="plugin" id="pdfzusmerge" group="content">packages/plg_content_pdfzusmerge/plg_content_pdfzusmerge_v0.1.0.zip</file>
   </files>
   <updateservers>
-    <server type="extension" name="PDF Zusammenfuegen von pdfzus Updates">https://raw.githubusercontent.com/wsgtcyx/joomla-extension-pdf-zusammenfuegen/main/manifest.xml</server>
+    <server type="extension" name="PDF Zusammenfuegen von pdfzus Updates">https://raw.githubusercontent.com/wsgtcyx/pdf-zusammenfuegen-joomla-extension/main/manifest.xml</server>
   </updateservers>
 </extension>

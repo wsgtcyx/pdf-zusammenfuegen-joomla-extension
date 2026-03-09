@@ -13,7 +13,7 @@
 
 Diese Punkte muessen manuell mit Login erledigt werden:
 
-- [ ] GitHub-Repository fuer `joomla-extension-pdf-zusammenfuegen` anlegen oder bestaetigen
+- [ ] GitHub-Repository fuer `pdf-zusammenfuegen-joomla-extension` anlegen oder bestaetigen
 - [ ] Lokalen Stand in das Release-Repository pushen
 - [ ] Release `v0.1.0` erstellen
 - [ ] Diese Dateien am Release anhaengen:
