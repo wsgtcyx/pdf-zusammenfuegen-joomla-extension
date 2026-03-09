@@ -1,0 +1,32 @@
+{
+  "name": "joomla-extension-pdf-zusammenfuegen",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Joomla-Erweiterung fuer lokales PDF-Zusammenfuegen mit pdfzus.",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist extension/packages/com_pdfzusmerge/media/com_pdfzusmerge/* artifacts/release/* artifacts/source/* manifest.xml",
+    "build:frontend": "vite build",
+    "build:assets": "node build/copy-frontend-to-extension.mjs",
+    "build:packages": "node build/build-packages.mjs",
+    "build:manifest": "node build/generate-update-manifest.mjs",
+    "build:checksums": "node build/generate-checksums.mjs",
+    "build:source": "node build/create-source-zip.mjs",
+    "build:release": "pnpm build:frontend && pnpm build:assets && pnpm build:packages && pnpm build:manifest && pnpm build:checksums && pnpm build:source",
+    "smoke:compose:up": "docker compose -f docker/docker-compose.yml up -d",
+    "smoke:compose:down": "docker compose -f docker/docker-compose.yml down -v",
+    "smoke:status": "docker compose -f docker/docker-compose.yml ps"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.14"
+  }
+}

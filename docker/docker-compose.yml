@@ -1,0 +1,36 @@
+services:
+  db:
+    image: mariadb:11.4
+    container_name: pdfzusmerge-joomla-db
+    environment:
+      MARIADB_DATABASE: joomla
+      MARIADB_USER: joomla
+      MARIADB_PASSWORD: joomla
+      MARIADB_ROOT_PASSWORD: root
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - joomla_db_data:/var/lib/mysql
+
+  joomla:
+    image: joomla:5-apache
+    container_name: pdfzusmerge-joomla-app
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8087:80"
+    environment:
+      JOOMLA_DB_HOST: db
+      JOOMLA_DB_USER: joomla
+      JOOMLA_DB_PASSWORD: joomla
+      JOOMLA_DB_NAME: joomla
+    volumes:
+      - joomla_app_data:/var/www/html
+
+volumes:
+  joomla_db_data:
+  joomla_app_data:

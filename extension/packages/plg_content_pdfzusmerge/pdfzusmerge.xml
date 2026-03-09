@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="5.0" type="plugin" group="content" method="upgrade">
+  <name>plg_content_pdfzusmerge</name>
+  <element>pdfzusmerge</element>
+  <author>pdfzus</author>
+  <creationDate>2026-03-08</creationDate>
+  <copyright>(C) 2026 pdfzus. Alle Rechte vorbehalten.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <authorEmail>support2@pdfzus.de</authorEmail>
+  <authorUrl>https://pdfzus.de/</authorUrl>
+  <version>0.1.0</version>
+  <description>PLG_CONTENT_PDFZUSMERGE_XML_DESCRIPTION</description>
+  <namespace path="src">Joomla\Plugin\Content\Pdfzusmerge</namespace>
+  <files>
+    <folder plugin="pdfzusmerge">services</folder>
+    <folder>src</folder>
+  </files>
+  <languages folder="language">
+    <language tag="de-DE">de-DE/plg_content_pdfzusmerge.ini</language>
+    <language tag="de-DE">de-DE/plg_content_pdfzusmerge.sys.ini</language>
+    <language tag="en-GB">en-GB/plg_content_pdfzusmerge.ini</language>
+    <language tag="en-GB">en-GB/plg_content_pdfzusmerge.sys.ini</language>
+  </languages>
+</extension>

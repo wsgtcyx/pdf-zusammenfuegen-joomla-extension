@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="5.0" method="upgrade">
+  <name>com_pdfzusmerge</name>
+  <element>com_pdfzusmerge</element>
+  <author>pdfzus</author>
+  <creationDate>2026-03-08</creationDate>
+  <copyright>(C) 2026 pdfzus. Alle Rechte vorbehalten.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <authorEmail>support2@pdfzus.de</authorEmail>
+  <authorUrl>https://pdfzus.de/</authorUrl>
+  <version>0.1.0</version>
+  <description>COM_PDFZUSMERGE_XML_DESCRIPTION</description>
+  <namespace path="src">Joomla\Component\Pdfzusmerge</namespace>
+
+  <media folder="media/com_pdfzusmerge" destination="com_pdfzusmerge">
+    <filename>app.css</filename>
+    <filename>app.js</filename>
+  </media>
+
+  <files folder="components/com_pdfzusmerge">
+    <filename>pdfzusmerge.php</filename>
+    <folder>src</folder>
+    <folder>tmpl</folder>
+  </files>
+
+  <languages folder="language">
+    <language tag="de-DE">de-DE/com_pdfzusmerge.ini</language>
+    <language tag="de-DE">de-DE/com_pdfzusmerge.sys.ini</language>
+    <language tag="en-GB">en-GB/com_pdfzusmerge.ini</language>
+    <language tag="en-GB">en-GB/com_pdfzusmerge.sys.ini</language>
+  </languages>
+
+  <administration>
+    <menu>com_pdfzusmerge</menu>
+    <submenu>
+      <menu link="option=com_pdfzusmerge" view="dashboard" alt="Dashboard">COM_PDFZUSMERGE_MENU_DASHBOARD</menu>
+    </submenu>
+    <files folder="administrator/components/com_pdfzusmerge">
+      <filename>pdfzusmerge.php</filename>
+      <folder>services</folder>
+      <folder>src</folder>
+      <folder>tmpl</folder>
+    </files>
+    <languages folder="administrator/language">
+      <language tag="de-DE">de-DE/com_pdfzusmerge.ini</language>
+      <language tag="de-DE">de-DE/com_pdfzusmerge.sys.ini</language>
+      <language tag="en-GB">en-GB/com_pdfzusmerge.ini</language>
+      <language tag="en-GB">en-GB/com_pdfzusmerge.sys.ini</language>
+    </languages>
+  </administration>
+
+  <config>
+    <fields name="params">
+      <fieldset name="basic" label="COM_PDFZUSMERGE_FIELDSET_BASIC">
+        <field
+          name="tool_title"
+          type="text"
+          default="PDF Zusammenfuegen von pdfzus"
+          label="COM_PDFZUSMERGE_FIELD_TOOL_TITLE_LABEL"
+          description="COM_PDFZUSMERGE_FIELD_TOOL_TITLE_DESC"
+        />
+        <field
+          name="tool_subtitle"
+          type="textarea"
+          rows="4"
+          default="Mehrere PDF-Dateien lokal sortieren, Bereiche waehlen und ohne Upload zu einer einzigen Datei verbinden."
+          label="COM_PDFZUSMERGE_FIELD_TOOL_SUBTITLE_LABEL"
+          description="COM_PDFZUSMERGE_FIELD_TOOL_SUBTITLE_DESC"
+        />
+        <field
+          name="download_file_name"
+          type="text"
+          default="pdfzus-merge"
+          label="COM_PDFZUSMERGE_FIELD_DOWNLOAD_LABEL"
+          description="COM_PDFZUSMERGE_FIELD_DOWNLOAD_DESC"
+        />
+        <field
+          name="show_privacy_note"
+          type="radio"
+          label="COM_PDFZUSMERGE_FIELD_PRIVACY_LABEL"
+          description="COM_PDFZUSMERGE_FIELD_PRIVACY_DESC"
+          default="1"
+          layout="joomla.form.field.radio.switcher"
+        >
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
