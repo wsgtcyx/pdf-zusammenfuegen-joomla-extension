@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+  <update>
+    <name>PDF Zusammenfuegen von pdfzus</name>
+    <description>Joomla-Paket fuer lokales PDF-Zusammenfuegen mit Frontend-Komponente und Content-Plugin.</description>
+    <element>pkg_pdfzusmerge</element>
+    <type>package</type>
+    <version>0.1.0</version>
+    <client>site</client>
+    <infourl title="PDF Zusammenfuegen von pdfzus">https://github.com/wsgtcyx/pdf-zusammenfuegen-joomla-extension/releases/tag/v0.1.0</infourl>
+    <downloads>
+      <downloadurl type="full" format="zip">https://github.com/wsgtcyx/pdf-zusammenfuegen-joomla-extension/releases/download/v0.1.0/pkg_pdfzusmerge_v0.1.0.zip</downloadurl>
+    </downloads>
+    <sha512>cdfcca2436342359d2dc83bd185b7c5acff4844798c16a4264594402ce2c851f1016bfbe3c7a45ce45a3ea9ebc185c8d2b454ffc16fbccdff5238402afac101f</sha512>
+    <targetplatform name="joomla" version="5\.[0-9]+|6\.[0-9]+" />
+  </update>
+</updates>

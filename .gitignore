@@ -3,5 +3,4 @@ dist/
 artifacts/release/
 artifacts/source/
 tmp/
-manifest.xml
 .DS_Store
